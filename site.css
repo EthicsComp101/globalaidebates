@@ -1,0 +1,21 @@
+/* Shared fixes: headings, media, phone layout */
+:where(.from-h2){font-size:1.5em;margin-block:.83em}
+.page-h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,5vw,40px);text-align:center;margin:32px 16px 8px}
+img,video,iframe{max-width:100%}
+img{height:auto}
+@media (max-width:700px){
+  .topbar{font-size:16px !important;padding:12px 14px !important}
+  .topbar small{font-size:13px !important}
+  header.site{padding:12px 14px !important;gap:8px !important}
+  header.site .brand{font-size:22px !important}
+  nav.main{flex-wrap:nowrap !important;overflow-x:auto;width:100%;gap:2px !important;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  nav.main::-webkit-scrollbar{display:none}
+  nav.main a{white-space:nowrap;font-size:12px !important;padding:8px 9px !important}
+  main{padding:0 2px}
+  main *{overflow-wrap:break-word}
+  .prize-tiers,.prize-cards-row{grid-template-columns:1fr !important}
+  .udl-cats{grid-template-columns:repeat(2,1fr) !important}
+  table{display:block;max-width:100%;overflow-x:auto}
+  footer.site{padding:20px 14px !important}
+}
+body{overflow-x:clip}
